@@ -122,6 +122,7 @@ class AddressBook(UserDict):
     
     def __str__(self) -> str:
         dict = {}
+        result_str = ""
         for k, v in self.items():
             dict[k] = str(v)
             result_str = "\n".join([f"{k}:{v}" for k,v in dict.items()])
